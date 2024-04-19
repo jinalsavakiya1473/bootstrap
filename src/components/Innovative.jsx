@@ -8,7 +8,7 @@ function Innovative(){
                     <Col lg={6} className="pe-5">
                         <h5>Innovative With Experience
                         <br class="d-none d-xl-block"></br> 
-                        UX Design 2019</h5>
+                        UX Design 2024</h5>
                         <h3 className="py-4">Where The business World Meets</h3>
                         <p>Morning steas great earth for divide our good sixth called abunda itseld appear fisrd seaton upon above may bearing all moveth morning make subdue stars they are a goreat eart divide our good sixth one of that</p>
                     </Col>
@@ -27,7 +27,7 @@ function Innovative(){
                                 <p>Mins</p>
                             </li>
                         </ul>
-                        <h3>January 20 -22, 2019 in Buffelo City</h3>
+                        <h3>January 20 -22, 2024 in Buffelo City</h3>
                         <p className='text-center ps-5 mt-2'><a href="#" className='ticket'>GET TICKET</a></p>
                     </Col>
                 </Row>

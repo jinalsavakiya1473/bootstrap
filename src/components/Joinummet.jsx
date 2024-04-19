@@ -42,7 +42,7 @@ function Joinummet(newjoin){
                                             <img src={join.image} alt="" />
                                             <div className="owl_cont p-5">
                                                 <h5 className="pb-3">Owls should be used to help abused children open up in therapy sessions, says charity boss</h5>
-                                                <div className="owl_icn text-secondary"><TfiCommentsSmiley></TfiCommentsSmiley><span className="ps-2 pe-5">03 Feb, 2019</span><MdOutlineWatchLater></MdOutlineWatchLater><span className="ps-2">No Comment</span></div>
+                                                <div className="owl_icn text-secondary"><TfiCommentsSmiley></TfiCommentsSmiley><span className="ps-2 pe-5">03 Feb, 2024</span><MdOutlineWatchLater></MdOutlineWatchLater><span className="ps-2">No Comment</span></div>
                                             </div>
                                         </div>
                                     </div>

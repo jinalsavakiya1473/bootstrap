@@ -14,25 +14,25 @@ function Conference(){
                         <li>
                             <button className="tab-btn rounded-0 px-5 py-3 border-0" id="day-1" data-bs-toggle="tab" data-bs-target="#day-1-pane" aria-controls="home-tab-pane">
                                 <h5 className="pb-2">Day 1</h5>
-                                <p>23 jan, 2019</p>
+                                <p>23 jan, 2024</p>
                             </button>
                         </li>
                         <li>
                             <button className="tab-btn active rounded-0 px-5 py-3 border-0" id="day-2" data-bs-toggle="tab" data-bs-target="#day-2-pane" aria-controls="profile-tab-pane" >
                                 <h5 className="pb-2">Day 2</h5>
-                                <p>23 jan, 2019</p>
+                                <p>23 jan, 2024</p>
                             </button>
                         </li>
                         <li>
                             <button className="tab-btn rounded-0 px-5 py-3 border-0" id="day-3" data-bs-toggle="tab" data-bs-target="#day-3-pane" aria-controls="contact-tab-pane" >
                                 <h5 className="pb-2">Day 3</h5>
-                                <p>23 jan, 2019</p>
+                                <p>23 jan, 2024</p>
                             </button>
                         </li>
                         <li>
                             <button className="tab-btn rounded-0 px-5 py-3 border-0" id="day-4" data-bs-toggle="tab" data-bs-target="#day-4-pane" aria-controls="disabled-tab-pane">
                                 <h5 className="pb-2">Day 4</h5>
-                                <p>23 jan, 2019</p>
+                                <p>23 jan, 2024</p>
                             </button>
                         </li>
                     </ul>
