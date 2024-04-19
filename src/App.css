@@ -1,0 +1,533 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --pink:#EA0763;
+    --purple:#3B1D82;
+    --white:#fff;
+    --black:#000;
+    --gray:#797979;
+    --bg:#F7F7F7;
+    --osward:"Oswald", sans-serif;
+    --darkpink:#B8024C;
+    --footer:#111429;
+}
+body{
+    p{
+        color:var(--gray) ;
+    }
+    h5{
+        font-family: var(--osward);
+    }
+    font-family: "Roboto", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,a,ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.spacer{
+    padding: 80px 0;
+}
+li{
+    list-style: none;
+    position: relative;
+}
+.image img{
+    width: 80px;
+    margin-bottom: 80px;
+}
+.top_tittle h1{
+    font-family: var(--osward);
+}
+/* ================================== header ===================================== */
+.navbar-nav .nav-link a{
+    color: var(--black);
+    &:hover,
+    &:focus{
+        color: var(--pink);
+    }
+}
+.navbar-nav .nav-link a.active{
+    color: var(--pink);
+}
+.ticket{
+    color: var(--purple);
+    font-weight: bold;
+    font-family: var(--osward);
+}
+.sub-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: var(--white);
+    opacity: 0;
+    transform: translateY(60px);
+    transition: .5s;
+    visibility: hidden;
+}
+.sub-menu li:hover a{
+    color: var(--white) !important;
+    
+} 
+.sub-menu li{
+    padding: 10px;
+    border-bottom:1px solid #f0e9ff;
+    &:hover{
+        background-color: var(--purple);
+        border-bottom: 1px solid var(--purple);
+    }
+} 
+.main-menu a:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    background-color: var(--white);
+    z-index: 9999;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+.icn-menu{
+    &:hover{
+        background-color: var(--white);
+    }
+}
+.navbar-toggler{
+    border: 0;
+}
+/* ----------------------------- banner --------------------------- */
+.banner{
+    background-image: url(./image/asset\ 30.png);
+    padding: 240px 0;
+}
+.banner_content h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
+button{
+    background-color: var(--pink);
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-family: var(--osward);
+    transition: .5s;
+    &:hover{
+        background-color: var(--darkpink);
+    }
+}
+/* ----------------------------- innovative ----------------------------- */
+.innovative{
+    background-color: var(--bg);
+}
+.innovative h5{
+    color: var(--purple);
+}
+.innovative h3{
+    color: var(--pink);
+    font-size: 18px;
+}
+.day{
+    background-image: url(./image/asset\ 31.png);
+    background-repeat: no-repeat;
+}
+.hour{
+    background-image: url(./image/asset\ 32.png);
+    background-repeat: no-repeat;
+}
+.mins{
+    background-image: url(./image/asset\ 33.png);
+    background-repeat: no-repeat;
+}
+.innovative li{
+    height: 145px;
+    width: 130px;
+    padding-top: 35px;
+}
+/* ------------------------------ Why Join Ummet --------------------------*/
+.top_tittle h1{
+    font-size: 36px;
+    color: var(--purple);
+    font-family: var(--osward);
+}
+.ummet_btn button{
+    border: 1px solid var(--purple);
+    &:hover{
+        background-color: var(--purple) !important;
+        color: var(--white);
+    }
+}
+.service:hover .ummet_img{
+    background-image: url(./image/ummet.webp);
+    color: var(--white);
+}
+.ummet_img{
+    background-image: url(./image/asset\ 34.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    transition: .5s;
+    color: var(--purple);
+}
+/* --------------------------- speakers --------------------------- */
+.speakers{
+    background-image: url(./image/asset\ 35.png);
+}
+.meet_speaker{
+    border: 10px solid var(--white);
+    transition: .5s;
+    overflow: hidden;
+}
+.meet_speaker:hover .speaker_footer{
+    background: rgba(234, 7, 99, 0.6);
+}
+.speaker_footer{
+    background-color: rgba(59, 29, 130, 0.9);
+    width: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+.speaker_overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(59, 29, 130, 0.9);
+    transform: translateY(-100px);
+    transition: all .6s ease;
+    opacity: 0;
+    z-index: 0;
+}
+.meet_speaker:hover .speaker_overlay{
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+.social{
+    transform: translate(-50%,-50%);
+}
+.social li a{
+    color: #b2b1b1;
+    &:hover{
+        color: var(--white);
+    }
+}
+/* ----------------------------- Conference Schedule ------------------------------ */
+.tab-btn{
+    background-color: var(--bg);
+    &:hover{
+        background-color: var(--bg);
+    }
+    &:focus{
+        background-color: var(--purple);
+        color: var(--white);
+    }
+}
+.tab-btn:focus p{
+    color: var(--white);
+}
+.achivement .card_identity{
+    background-color: var(--purple);
+    transition: .5s;
+}
+.achivement:hover .card_identity{
+    background-color: var(--pink);
+}
+.achivement .card_identity img{
+    width: 25%;
+}
+.achivement .schedule_cont{
+    background-color: var(--bg);
+}
+.nav-tabs li button.active{
+    background-color: var(--purple);
+    color: var(--white);
+}
+.nav-tabs li button.active p{
+    color: var(--white);
+}
+/* --------------------------- Choose Your Ticket --------------------------- */
+.ticket_price{
+    background-color: var(--bg);
+}
+.bottom_ticket h1{
+    font-size: 60px;
+}
+.price_footer button{
+    background-color: var(--bg);
+}
+.price_middle ul li{
+    margin-bottom: 8px;
+    color: var(--gray);
+}
+.price_middle ul li .cross{
+    color: var(--pink);
+}
+.price_card{
+    transition: .5s;
+}
+.price_card:hover{
+    background-color: var(--purple) !important;
+    color: var(--white) !important;
+}
+.price_card:hover p,
+.price_card:hover li{
+    color: var(--white);
+}
+.price_card:hover button{
+    background-color: var(--pink);
+    color: var(--white);
+    border: 0 !important;
+}
+/* ------------------------------- Event Plan Sponsors ------------------------- */
+.sponsers{
+    background-image: url(./image/asset\ 36.png);
+}
+.bottom_sponcers h4{
+    font-family: var(--osward);
+}
+.gold_spons{
+    width: 80%;
+}
+.silver_spons{
+    width: 65%;
+}
+.sponser_single{
+    position: relative;
+    height: 140px;
+    border: 5px solid #fff;
+    text-align: center;
+    padding: 20px;
+}
+.bottom_sponcers .img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* ---------------------------- Event Plan Sponsors ---------------------- */
+.eventplan{
+    background-image: url(./image/asset\ 37.png);
+}
+.plan_icn{
+    height: 100%;
+    width: 100%;
+    background: rgba(1, 1, 14, 0.4);
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(80px);
+    transition: all .6s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.plan_icn .gallary_add{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(234, 7, 99, 0.6);
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+.plan_img:hover .plan_icn{
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+/* ----------------------------- owl carousel ------------------------- */
+.item{
+    background-color: var(--bg);
+    transition: .5s;
+    &:hover{
+        background-color: var(--purple);
+        color: var(--white);
+    }
+}
+.item:hover .owl_icn{
+    color: var(--white) !important;
+}
+.owl-nav{
+    display:block !important;
+    font-size: 30px !important;
+    color: var(--gray);
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: var(--white) !important;
+    color: var(--gray) !important;
+}
+/* ============================= footer =============================== */
+footer{
+    background-color: var(--footer);
+}
+.top_footer ul li a{
+    color: var(--gray);
+    &:hover{
+        color: var(--purple);
+    }
+}
+.bottom_footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social_footer a{
+    color: var(--gray);
+    font-size: 20px;
+}
+.left_footer p span{
+    color: var(--pink);
+}
+/* =============================== about us ============================= */
+.about_us .banner{
+    padding: 170px 0;
+}
+.small-banner h1{
+    font-family: var(--osward);
+}
+/* ============================ single blog ======================== */
+.blog_left .blog_image a{
+    background-color: var(--pink);
+    bottom: -20px;
+    left: 40px;
+    padding: 13px 30px;
+    position: absolute;
+    display: block;
+    color: #fff;
+    background: #ea0763;
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+.blog_left h3,
+.blog_right .post_title{
+    font-family: var(--osward);
+}
+.blog_comment a{
+    color: var(--gray);
+}
+.blog_comment{
+    color: var(--gray);
+}
+.blog_content{
+    box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+    padding: 60px 30px 35px 35px;
+}
+.blog_right .input-group input{
+    border-radius: 0;
+    height: 50px;
+}
+.blog_right .blog_search{
+    width: 100%;
+    background-color: var(--purple);
+}
+.blog_right ul li a{
+    color: var(--gray);
+    &:hover{
+        color: var(--pink);
+    }
+}
+.category .blog_right ul li,
+.blog_right aside h5{
+    border-bottom:1px solid #f0e9ff;
+}
+ul li .cloud_btn{
+    border: 1px solid #eeeeee;
+    color: var(--gray);
+    transition: .5s;
+    &:hover{
+        background-color: var(--purple);
+        color: var(--white) !important;
+    }
+}
+.MCSE{
+    background-color: #F2F3F7;
+}
+.quote{
+    border-left: 2px solid var(--purple);
+}
+.border_bot{
+    border-bottom: 1px solid #f0e9ff;
+}
+.replay button{
+    background-color: var(--purple);
+    &:hover{
+        background-color: var(--pink);
+    }
+}
+/* ============================ contact us ============================ */
+.icn_wrong img{
+    width: 5%;
+}
+.something{
+    background-color: #E8EAED;
+    padding: 170px 0;
+}
+.went_wrong{
+    font-size: 12px;
+}
+.mda-icn{
+    color: var(--gray);
+}
+/* ============================= responsive ================================ */
+@media screen and (min-width:1200px) {
+    .navbar-nav .nav-link:hover .sub-menu{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:1199px) and (min-width:992px) {
+    .navbar-nav .nav-link:hover .sub-menu{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    .banner_content h1{
+        font-size: 45px;
+    }
+    .banner{
+        padding: 180px 0;
+    }
+}
+@media screen and (max-width:767px) and (min-width:576px){
+    .banner_content h1{
+        font-size: 40px;
+    }
+    .banner_content p{
+        font-size: 20px;
+    }
+    .banner,
+    .about_us .banner,
+    .something{
+        padding: 140px 0;
+    }
+    .top_tittle h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:576px){
+    .banner_content h1{
+        font-size: 28px;
+    }
+    .banner_content p,
+    .top_tittle p{
+        font-size: 12px;
+    }
+    .banner,
+    .about_us .banner,
+    .something{
+        padding: 70px 0;
+    }
+    .top_tittle h1{
+        font-size: 25px;
+    }
+}
