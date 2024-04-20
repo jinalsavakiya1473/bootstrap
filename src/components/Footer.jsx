@@ -11,7 +11,7 @@ function Footer(newfooter){
         <footer className="spacer">
             <div className="top_footer pb-5">
                <Container>
-                    <Row lg={4} sm={2} xs={1}>
+                    <Row lg={4} sm={2} xs={1} className="g-3">
                         <Col>
                             <h5 className="text-light pb-4">ABOUT UMEET</h5>
                             <p>The world has become so fast paced that people don’t want to stand by reading a page of information to be they would much rather look at a presentation and understand the message. It has come to a point where images and videos are used more to</p>
