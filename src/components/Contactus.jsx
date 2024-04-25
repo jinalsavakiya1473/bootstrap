@@ -16,12 +16,8 @@ function Contactus(){
                 </div>
             </div>
             <Container className="spacer">
-                <div className="something text-center">
-                    <div className="icn_wrong">
-                        <img src={require('../image/icon_error.png')} alt="" />
-                        <h4 className="py-4">Oops! Something went wrong.</h4>
-                        <p className="went_wrong">This page didn't load Google Maps correctly. See the JavaScript console for technical details.</p>
-                    </div>
+                <div className="something">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93532.37739754899!2d-78.94684357042206!3d42.896335165637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3126152dfe5a1%3A0x982304a5181f8171!2sBuffalo%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1714023646660!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <Row className="py-4">
                     <Col lg={8}>

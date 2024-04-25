@@ -464,18 +464,8 @@ ul li .cloud_btn{
     }
 }
 /* ============================ contact us ============================ */
-.icn_wrong img{
-    width: 5%;
-}
 .something{
     background-color: #E8EAED;
-    padding: 170px 0;
-}
-.went_wrong{
-    font-size: 12px;
-}
-.mda-icn{
-    color: var(--gray);
 }
 /* ============================= responsive ================================ */
 @media screen and (min-width:1200px) {
